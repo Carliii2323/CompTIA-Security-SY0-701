@@ -21,6 +21,7 @@ If these notes help, consider starring or forking the repo so more learners can 
 | --- | --- |
 | Official Security+ certification page | [CompTIA Security+](https://www.comptia.org/certifications/security) |
 | Official SY0-701 exam objectives PDF | [CompTIA Security+ SY0-701 Exam Objectives](https://assets.ctfassets.net/82ripq7fjls2/6TYWUym0Nudqa8nGEnegjG/0f9b974d3b1837fe85ab8e6553f4d623/CompTIA-Security-Plus-SY0-701-Exam-Objectives.pdf) |
+| Roadmap de estudio (ES) | [`ROADMAP.md`](ROADMAP.md) |
 | Schedule the exam | [Pearson VUE CompTIA Testing](https://www.pearsonvue.com/us/en/comptia.html) |
 | Buy exam voucher / training materials | [CompTIA Store](https://store.comptia.org/) |
 | Candidate agreement and exam policies | [CompTIA Exam Policies](https://www.comptia.org/testing/testing-policies-procedures/test-policies) |
