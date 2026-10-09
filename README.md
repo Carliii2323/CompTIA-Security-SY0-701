@@ -84,6 +84,10 @@ Use the section files for focused revision. The complete combined notes file is 
 | [`Section 28: Conclusion.md`](Section%2028:%20Conclusion.md) | Final review and practical study connections |
 | [`Complete CompTIA Security+ SY0-701 Study Notes.md`](Complete%20CompTIA%20Security%2B%20SY0-701%20Study%20Notes.md) | Complete combined Security+ SY0-701 study notes |
 
+## Practice Material (Spanish)
+
+The [`Practica/`](Practica/README.md) folder has practice material in Spanish: 90 multiple-choice questions by domain with explanations, performance-based question scenarios, an acronym list, and flashcards (also as an Anki import file).
+
 ## How To Study With This Repository
 
 1. Download the official CompTIA SY0-701 exam objectives.

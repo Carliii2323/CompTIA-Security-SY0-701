@@ -1,0 +1,117 @@
+¿Cuáles son las 4 categorías de controles?	Técnicos, gerenciales (administrativos), operativos y físicos.	SecPlus::Conceptos_generales
+¿Cuáles son los 6 tipos de controles?	Preventivo, disuasivo, detectivo, correctivo, compensatorio y directivo.	SecPlus::Conceptos_generales
+Control compensatorio	Medida alternativa cuando el control principal no es viable (ej.: segmentar un sistema legado sin MFA).	SecPlus::Conceptos_generales
+No repudio	Garantía de que alguien no puede negar una acción. Se logra con firmas digitales.	SecPlus::Conceptos_generales
+Zero Trust: plano de control	Define y gestiona políticas: identidad adaptativa, reducción del alcance de amenazas, acceso por políticas, zonas seguras.	SecPlus::Conceptos_generales
+Zero Trust: Policy Engine vs Policy Administrator vs PEP	PE decide, PA establece/comunica la sesión, PEP aplica la decisión (permite o bloquea).	SecPlus::Conceptos_generales
+Gap analysis: pasos	Definir alcance, recolectar datos, analizar, desarrollar plan (POA&M).	SecPlus::Conceptos_generales
+Access control vestibule	Dos puertas que no se abren a la vez. Evita tailgating y piggybacking.	SecPlus::Conceptos_generales
+Salting	Valor aleatorio agregado a la contraseña antes del hash. Anula rainbow tables.	SecPlus::Conceptos_generales
+Key stretching	Aplicar el hash muchas veces (PBKDF2, bcrypt) para hacer lenta la fuerza bruta.	SecPlus::Conceptos_generales
+Cifrar para confidencialidad (asimétrico)	Con la clave PÚBLICA del destinatario.	SecPlus::Conceptos_generales
+Firmar digitalmente	Hash del mensaje cifrado con la clave PRIVADA del remitente.	SecPlus::Conceptos_generales
+Simétrico vs asimétrico	Simétrico: una clave, rápido, problema de distribución (AES). Asimétrico: par de claves, lento, resuelve distribución (RSA, ECC).	SecPlus::Conceptos_generales
+Tokenización vs masking	Tokenización reemplaza el dato por un token con mapeo en un vault. Masking oculta parte del dato (****1234).	SecPlus::Conceptos_generales
+Esteganografía	Ocultar datos dentro de otro archivo (imagen, audio).	SecPlus::Conceptos_generales
+CRL vs OCSP	CRL: lista completa de revocados. OCSP: consulta en tiempo real de un certificado. OCSP stapling: el servidor adjunta la respuesta.	SecPlus::Conceptos_generales
+Certificado wildcard	Cubre todos los subdominios de un nivel: *.ejemplo.com.	SecPlus::Conceptos_generales
+Actor estado-nación	Recursos muy altos, espionaje o sabotaje, persistencia (APT).	SecPlus::Amenazas_y_ataques
+Hacktivista	Motivación ideológica o política. Defacement, DDoS, filtraciones.	SecPlus::Amenazas_y_ataques
+Shadow IT	Uso de sistemas o servicios sin aprobación de TI.	SecPlus::Amenazas_y_ataques
+Smishing / Vishing / Whaling	Phishing por SMS / por voz / dirigido a ejecutivos.	SecPlus::Amenazas_y_ataques
+Watering hole	Comprometer un sitio que el grupo objetivo visita habitualmente.	SecPlus::Amenazas_y_ataques
+Typosquatting	Registrar dominios con errores de tipeo de uno legítimo.	SecPlus::Amenazas_y_ataques
+Pretexting	Inventar un escenario creíble para obtener información.	SecPlus::Amenazas_y_ataques
+Virus vs gusano	El virus necesita que el usuario lo ejecute; el gusano se propaga solo por la red.	SecPlus::Amenazas_y_ataques
+Troyano	Malware disfrazado de software legítimo. RAT = troyano de acceso remoto.	SecPlus::Amenazas_y_ataques
+Rootkit	Malware que se oculta con privilegios elevados (kernel). Difícil de detectar.	SecPlus::Amenazas_y_ataques
+Bomba lógica	Código que se activa cuando se cumple una condición (fecha, evento).	SecPlus::Amenazas_y_ataques
+Malware fileless	Vive en memoria y abusa de herramientas legítimas (PowerShell). Living off the land.	SecPlus::Amenazas_y_ataques
+SQL injection: mitigación	Consultas parametrizadas, validación de entrada, mínimo privilegio en la BD, WAF.	SecPlus::Amenazas_y_ataques
+XSS almacenado vs reflejado	Almacenado: queda en el servidor y afecta a todos. Reflejado: viaja en un enlace que la víctima abre.	SecPlus::Amenazas_y_ataques
+CSRF	Hace que el navegador autenticado de la víctima envíe una petición no deseada. Mitigación: tokens anti-CSRF.	SecPlus::Amenazas_y_ataques
+Buffer overflow	Escribir más datos de los que caben en un buffer para sobrescribir memoria. Mitigación: validar límites, ASLR, DEP.	SecPlus::Amenazas_y_ataques
+TOCTOU	Condición de carrera entre la verificación y el uso de un recurso.	SecPlus::Amenazas_y_ataques
+Directory traversal	Usar ../ para salir del directorio permitido.	SecPlus::Amenazas_y_ataques
+Replay attack	Reenviar una transmisión válida capturada. Mitigación: nonces, timestamps, tokens de un uso.	SecPlus::Amenazas_y_ataques
+On-path (MITM)	Interceptar y alterar la comunicación. Mitigación: TLS, VPN, verificar certificados.	SecPlus::Amenazas_y_ataques
+Amplificación DNS	Consultas pequeñas con IP falsificada a resolvers abiertos que devuelven respuestas grandes a la víctima.	SecPlus::Amenazas_y_ataques
+Password spraying vs fuerza bruta	Spraying: pocas contraseñas contra muchas cuentas. Fuerza bruta: muchas contraseñas contra una cuenta.	SecPlus::Amenazas_y_ataques
+Escalada vertical vs horizontal	Vertical: subir a admin/root. Horizontal: acceder a recursos de otro usuario del mismo nivel.	SecPlus::Amenazas_y_ataques
+Indicadores de compromiso (IoC)	Viaje imposible, bloqueos de cuenta, consumo inusual de recursos, logs faltantes, accesos concurrentes.	SecPlus::Amenazas_y_ataques
+Bluesnarfing vs bluejacking	Bluesnarfing: robo de datos por Bluetooth. Bluejacking: envío de mensajes no solicitados.	SecPlus::Amenazas_y_ataques
+Allowlist vs blocklist	Allowlist: sólo lo aprobado se ejecuta (más seguro). Blocklist: se bloquea lo conocido como malo.	SecPlus::Amenazas_y_ataques
+Responsabilidad compartida en IaaS	Proveedor: físico, red, hipervisor. Cliente: SO, apps, datos, identidades.	SecPlus::Arquitectura
+VM escape	Salir de una VM para acceder al hipervisor u otras VMs.	SecPlus::Arquitectura
+SDN: planos	Control (decide), datos (reenvía), gestión (administra).	SecPlus::Arquitectura
+IaC	Infraestructura definida en código versionado. Consistencia, auditoría, evita configuration drift.	SecPlus::Arquitectura
+IDS vs IPS	IDS: pasivo, copia del tráfico, alerta. IPS: en línea, bloquea.	SecPlus::Arquitectura
+NGFW	Firewall de capa 7: identifica aplicaciones, integra IPS e inspección TLS.	SecPlus::Arquitectura
+WAF	Firewall de aplicaciones web: bloquea SQLi, XSS, etc.	SecPlus::Arquitectura
+802.1X	Control de acceso por puerto: suplicante, autenticador (switch/AP) y servidor de autenticación (RADIUS).	SecPlus::Arquitectura
+SASE	SD-WAN + seguridad en la nube (SWG, CASB, ZTNA, FWaaS).	SecPlus::Arquitectura
+Estados de los datos	En reposo (disco), en tránsito (red), en uso (memoria/CPU).	SecPlus::Arquitectura
+Soberanía de datos	Los datos quedan sujetos a las leyes del país donde se recolectan o almacenan.	SecPlus::Arquitectura
+RPO vs RTO	RPO: cuántos datos podés perder (frecuencia de backup). RTO: en cuánto tiempo hay que volver a operar.	SecPlus::Arquitectura
+Hot / warm / cold site	Hot: listo ya, caro. Warm: equipado, faltan datos. Cold: sólo espacio y energía, barato.	SecPlus::Arquitectura
+Backup incremental vs diferencial	Incremental: cambios desde el último backup (restaurar: completo + todos los incrementales). Diferencial: cambios desde el último completo (completo + último diferencial).	SecPlus::Arquitectura
+RAID 0 / 1 / 5 / 6 / 10	0: striping sin redundancia. 1: espejo. 5: paridad, tolera 1 disco (mín. 3). 6: doble paridad, tolera 2. 10: espejo + striping.	SecPlus::Arquitectura
+ICS/SCADA legado	Segmentar o aislar (air gap) cuando no se puede parchear.	SecPlus::Arquitectura
+Factores de autenticación	Algo que sabés, algo que tenés, algo que sos, algún lugar donde estás, algo que hacés.	SecPlus::Operaciones
+SAML vs OAuth vs OIDC	SAML: SSO federado con XML. OAuth: autorización delegada con tokens. OIDC: autenticación sobre OAuth.	SecPlus::Operaciones
+DAC / MAC / RBAC / ABAC	DAC: decide el dueño. MAC: etiquetas del sistema. RBAC: por rol. ABAC: por atributos (más granular).	SecPlus::Operaciones
+PAM	Gestión de cuentas privilegiadas: bóveda de contraseñas, JIT, grabación de sesiones.	SecPlus::Operaciones
+WPA3-Enterprise	Autenticación individual vía 802.1X/RADIUS. WPA3 usa SAE en vez de PSK.	SecPlus::Operaciones
+SPF / DKIM / DMARC	SPF: servidores autorizados. DKIM: firma del mensaje. DMARC: qué hacer si fallan y reportes.	SecPlus::Operaciones
+NAC	Verifica la postura del dispositivo antes de darle acceso a la red.	SecPlus::Operaciones
+EDR vs XDR	EDR: detección y respuesta en endpoints. XDR: extiende a red, nube y correo.	SecPlus::Operaciones
+Falso positivo vs falso negativo	FP: alerta de algo que no existe. FN: no alerta algo que sí existe (más peligroso).	SecPlus::Operaciones
+Escaneo con credenciales	Inicia sesión en el host y da resultados más precisos que un escaneo sin credenciales.	SecPlus::Operaciones
+CVE vs CVSS	CVE: identificador de la vulnerabilidad. CVSS: puntaje de severidad 0-10.	SecPlus::Operaciones
+SNMPv3	Única versión de SNMP con autenticación y cifrado.	SecPlus::Operaciones
+Fases de IR (CompTIA)	Preparación, detección, análisis, contención, erradicación, recuperación, lecciones aprendidas.	SecPlus::Operaciones
+Orden de volatilidad	Caché/registros CPU, RAM, estado de red y procesos, disco, logs remotos, backups/medios archivados.	SecPlus::Operaciones
+Cadena de custodia	Registro de quién manejó la evidencia, cuándo y para qué.	SecPlus::Operaciones
+Legal hold	Obligación de conservar datos relevantes para un litigio.	SecPlus::Operaciones
+Threat hunting	Búsqueda proactiva de amenazas a partir de una hipótesis, sin esperar alertas.	SecPlus::Operaciones
+Tabletop exercise	Discusión guiada de un escenario, sin tocar sistemas.	SecPlus::Operaciones
+SOAR	Orquesta herramientas y automatiza respuestas con playbooks.	SecPlus::Operaciones
+SIEM	Agrega, normaliza y correlaciona logs para generar alertas.	SecPlus::Operaciones
+SLE	Valor del activo × EF.	SecPlus::Gestión_del_programa
+ALE	SLE × ARO.	SecPlus::Gestión_del_programa
+Estrategias de riesgo	Transferir (seguro), aceptar, evitar, mitigar.	SecPlus::Gestión_del_programa
+Riesgo inherente vs residual	Inherente: antes de los controles. Residual: después de los controles.	SecPlus::Gestión_del_programa
+Apetito vs tolerancia al riesgo	Apetito: cuánto riesgo se está dispuesto a perseguir. Tolerancia: la variación aceptable alrededor de ese nivel.	SecPlus::Gestión_del_programa
+Risk register	Lista de riesgos con probabilidad, impacto, dueño y respuesta.	SecPlus::Gestión_del_programa
+Due diligence vs due care	Diligence: investigar antes de comprometerse. Care: actuar responsablemente después.	SecPlus::Gestión_del_programa
+SLA / MOU / MSA / SOW / NDA	SLA: niveles de servicio. MOU: intención no vinculante. MSA: contrato marco. SOW: trabajo concreto. NDA: confidencialidad.	SecPlus::Gestión_del_programa
+Política vs estándar vs procedimiento	Política: qué y por qué. Estándar: requisito obligatorio concreto. Procedimiento: paso a paso.	SecPlus::Gestión_del_programa
+Controller vs processor (GDPR)	Controller decide fines y medios. Processor trata los datos en su nombre.	SecPlus::Gestión_del_programa
+Gestión de cambios	Solicitud, análisis de impacto, aprobación del CAB, pruebas, ventana de mantenimiento, plan de backout, documentación.	SecPlus::Gestión_del_programa
+Certificado de destrucción	Prueba de que los medios se destruyeron correctamente.	SecPlus::Gestión_del_programa
+Pentest caja blanca / gris / negra	Known / partially known / unknown environment.	SecPlus::Gestión_del_programa
+Reconocimiento pasivo vs activo	Pasivo: OSINT sin tocar el objetivo. Activo: escaneos e interacción directa.	SecPlus::Gestión_del_programa
+Rules of Engagement	Alcance, horarios, sistemas incluidos y excluidos, técnicas permitidas de un pentest.	SecPlus::Gestión_del_programa
+Puerto 21	FTP (TCP)	SecPlus::Puertos
+Puerto 22	SSH, SCP, SFTP (TCP)	SecPlus::Puertos
+Puerto 23	Telnet (TCP)	SecPlus::Puertos
+Puerto 25	SMTP (TCP)	SecPlus::Puertos
+Puerto 53	DNS (TCP/UDP)	SecPlus::Puertos
+Puerto 69	TFTP (UDP)	SecPlus::Puertos
+Puerto 80	HTTP (TCP)	SecPlus::Puertos
+Puerto 88	Kerberos (UDP)	SecPlus::Puertos
+Puerto 110	POP3 (TCP)	SecPlus::Puertos
+Puerto 143	IMAP (TCP)	SecPlus::Puertos
+Puerto 161 / 162	SNMP / SNMP Trap (UDP)	SecPlus::Puertos
+Puerto 389	LDAP (TCP)	SecPlus::Puertos
+Puerto 443	HTTPS (TCP)	SecPlus::Puertos
+Puerto 445	SMB (TCP)	SecPlus::Puertos
+Puerto 465 / 587	SMTPS / envío SMTP (TCP)	SecPlus::Puertos
+Puerto 514	Syslog (UDP)	SecPlus::Puertos
+Puerto 636	LDAPS (TCP)	SecPlus::Puertos
+Puerto 993	IMAPS (TCP)	SecPlus::Puertos
+Puerto 995	POP3S (TCP)	SecPlus::Puertos
+Puerto 1433	Microsoft SQL (TCP)	SecPlus::Puertos
+Puerto 1812 / 1813	RADIUS (UDP)	SecPlus::Puertos
+Puerto 3389	RDP (TCP)	SecPlus::Puertos
+Puerto 6514	Syslog sobre TLS (TCP)	SecPlus::Puertos
